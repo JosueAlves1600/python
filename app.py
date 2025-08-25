@@ -1,17 +1,16 @@
-legal = input("digite um numero") ##tipo string
-legal = int(input("digite um numero"))##tipo inteiro
-legal = float(input("digite um numero"))##duas casas decimais
+print("Tabuada do 1 ao 10")
+opção = input("Digite o número da tabuada que deseja (1 a 10): ")
 
-print("aqui voce mostra na tela")##apenas print
-print(f"aqui voce mostra na tela com variavel {legal}")##boa pratica
-print("aqui voce mostra na tela com variavel" + legal)## ñ recomendo
+if opção in ['1','2','3','4','5','6','7','8','9','10']:
+    num = int(opção)
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num * i}")
+else:
+    print("OPÇÃO ERRADA!")
 
+##numeroDigitado = int(input("Digite um numero: "))
 
-import tkinter as tk
+##for i in range(0,10,1):
+    ##print(f"{numeroDigitado}")
 
-janela = tk.Tk()
-janela.title("minha janela")
-janela.geometry("300x200")
-botao=tk.Button(janela, text='clique aqui')
-botao.pack("pady=50")
-janela.mainloop()
+    
